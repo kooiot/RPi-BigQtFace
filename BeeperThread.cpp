@@ -6,7 +6,11 @@
 void digitalWrite(int,int){};
 void pinMode(int,int){};
 #else
-    #include <wiringPi.h>
+    #define OUTPUT 0
+    #define LOW 0
+    #define HIGH 0
+void digitalWrite(int,int){};
+void pinMode(int,int){};
 #endif
 quint8 BeeperThread::pin=4;
 bool BeeperThread::pinInited=false;

@@ -8,7 +8,7 @@
 #if _WIN32
     void wiringPiSetup(){}
 #else
-    #include <wiringPi.h>
+    void wiringPiSetup(){}
 #endif
 //#include <Beeper.h>
 int main(int argc, char *argv[]){

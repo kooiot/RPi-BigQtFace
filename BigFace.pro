@@ -51,12 +51,6 @@ FORMS    += Face.ui \
     HaltDialog.ui \
     SysResMonitor.ui
 
-target.path=/home/pi/inject
-INSTALLS+=target
-
 RESOURCES += \
     weather/weatherIcon.qrc \
     icons.qrc
-unix{
-    LIBS+= -lwiringpi
-}
